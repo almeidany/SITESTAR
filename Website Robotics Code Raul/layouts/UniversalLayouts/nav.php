@@ -2,7 +2,7 @@
 <div class="container-fluid sticky-top">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark p-0">
-            <a href="index.html" class="navbar-brand">
+            <a href="index.php" class="navbar-brand">
                 <img src="img/logo.png" alt="Logo" class="img-fluid">
             </a>
             <div class="collapse navbar-collapse" id="navbarCollapse">

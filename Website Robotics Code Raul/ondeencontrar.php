@@ -43,7 +43,7 @@
     <!-- Spinner End -->
 
     <?php
-    include 'layouts/nav.php'
+    include 'layouts/UniversalLayouts/nav.php'
     ?>
 
     <!-- Hero Start -->

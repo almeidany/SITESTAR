@@ -1,50 +1,13 @@
-<?php
-$path = $_SERVER['REQUEST_URI']; // Obtém a URL requisitada
-$arquivo = __DIR__ . $path;
-
-if (!file_exists($arquivo) || is_dir($arquivo)) {
-    http_response_code(404);
-    require __DIR__ . '/error/404.php';
-    exit;
-}
-?>
 <!DOCTYPE html>
 <html lang="pt-PT">
 
-<head>
-    <meta charset="utf-8">
-    <title>Robotics Code Raul</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Logo -->
-    <link href="img/favpng.png" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+<?php
+include 'layouts/UniversalLayouts/head.php'
+?>
 
 <body>
     <?php
-    include 'layouts/nav.php'
+    include 'layouts/UniversalLayouts/nav.php'
     ?>
     <!-- Hero Start -->
     <div class="container-fluid pt-5 bg-primary hero-header mb-5">
@@ -62,7 +25,8 @@ if (!file_exists($arquivo) || is_dir($arquivo)) {
                         desafios do futuro digital.</p>
                     <a href="https://www.aerp.pt"
                         class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight"
-                        target="_blank">Saiba Mais</a>
+                        target="_blank">Saiba
+                        Mais</a>
                 </div>
                 <div class="col-lg-6 align-self-end text-center text-lg-end">
                     <img class="img-fluid" src="img/HomepageIMG1.png">
