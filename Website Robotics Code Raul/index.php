@@ -299,7 +299,7 @@ include 'layouts/UniversalLayouts/head.php'
                             <div class="row g-4">
                                 <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
                                     <div class="team-item bg-white text-center rounded p-4 pt-0">
-                                        <img class="img-fluid rounded-circle p-4" src="img/TEMPIMG1.jpg" alt="">
+                                        <img class="img-fluid rounded-circle p-4" src="./img/fotoperfil_L.jpg" alt="">
                                         <h5 class="mb-0">Prof. Luís Fernandes</h5>
                                         <small>Fundador do Clube</small>
                                         <div class="d-flex justify-content-center mt-3">
@@ -319,7 +319,7 @@ include 'layouts/UniversalLayouts/head.php'
                             <div class="row g-4">
                                 <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
                                     <div class="team-item bg-white text-center rounded p-4 pt-0">
-                                        <img class="img-fluid rounded-circle p-4" src="img/TEMPIMG2.jpg" alt="">
+                                        <img class="img-fluid rounded-circle p-4" src="./img/fotoperfil_S.jpeg" alt="">
                                         <h5 class="mb-0">Prof.ª Sónia Rodrigues</h5>
                                         <small>Coordenadora</small>
                                         <div class="d-flex justify-content-center mt-3">
@@ -342,14 +342,14 @@ include 'layouts/UniversalLayouts/head.php'
     <!-- Team End -->
 
     <?php
-    include 'layouts/footer.php'
+    include 'layouts/UniversalLayouts/footer.php'
     ?>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
 
     <?php
-    include 'layouts/scripts.php'
+    include 'layouts/UniversalLayouts/scripts.php'
     ?>
 </body>
 

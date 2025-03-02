@@ -27,4 +27,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/nav_mobile.css" rel="stylesheet">
+
+    <script src="js/sidebar_mobile.js"></script>
 </head>
