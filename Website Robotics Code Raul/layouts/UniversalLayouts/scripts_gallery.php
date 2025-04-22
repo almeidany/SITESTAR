@@ -9,4 +9,5 @@
 
  <!-- Template Javascript -->
  <script src="js/main.js"></script>
- <script src="js/galery.js"></script>
+ <script src="js/gallery.js"></script>
+ <script src="js/redirect_404.js"></script>

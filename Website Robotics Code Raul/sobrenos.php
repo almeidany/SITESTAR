@@ -1,3 +1,6 @@
+<?php
+require_once __DIR__ . '/layouts/UniversalLayouts/redirector.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-PT">
 

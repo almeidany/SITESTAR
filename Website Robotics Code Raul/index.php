@@ -1,3 +1,6 @@
+<?php
+require_once __DIR__ . '/layouts/UniversalLayouts/redirector.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-PT">
 
@@ -17,7 +20,7 @@ include 'layouts/UniversalLayouts/head.php'
                     <div class="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight">Robotics
                         Code
                         Raul</div>
-                    <h1 class="display-4 text-white mb-4 animated slideInRight">O clube de róbotica do AERP</h1>
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">O clube de robótica do AERP</h1>
                     <p class="text-white mb-4 animated slideInRight">O Clube de Robótica da escola oferece aos
                         alunos a
                         oportunidade de explorar a ciência e tecnologia, desenvolvendo habilidades práticas em

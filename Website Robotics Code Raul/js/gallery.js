@@ -1,39 +1,23 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const yearButtons = document.getElementById('yearButtons');
     const mainContent = document.getElementById('mainContent');
     const carouselInner = document.getElementById('carouselInner');
 
     // Anos disponíveis
-    const years = [2021, 2022, 2023, 2024];
+    const years = [2024, 2025];
     const recentYear = Math.max(...years);
 
     // Subtítulos e imagens específicas para cada ano
     const data = {
-        2021: {
-            'Botlompyics': ['img/2021/botlompyics1.jpg', 'img/2021/botlompyics2.jpg'],
-            'Festival Nacional da Robótica': ['img/2021/festival1.jpg', 'img/2021/festival2.jpg'],
-            'Olimpiadas da Robótica': ['img/2021/olimpiadas1.jpg', 'img/2021/olimpiadas2.jpg'],
-            'Roboparty': ['img/2021/roboparty1.jpg', 'img/2021/roboparty2.jpg'],
-            'Atividades': ['img/2021/atividades1.jpg', 'img/2021/atividades2.jpg'],
-            'Workshops': ['img/2021/workshops1.jpg', 'img/2021/workshops2.jpg']
-        },
-        2022: {
-            'Botlompyics': ['img/2022/botlompyics1.jpg', 'img/2022/botlompyics2.jpg'],
-            'Festival Nacional da Robótica': ['img/2022/festival1.jpg', 'img/2022/festival2.jpg'],
-            'Olimpiadas da Robótica': ['img/2022/olimpiadas1.jpg', 'img/2022/olimpiadas2.jpg'],
-            'Roboparty': ['img/2022/roboparty1.jpg', 'img/2022/roboparty2.jpg'],
-            'Atividades': ['img/2022/atividades1.jpg', 'img/2022/atividades2.jpg'],
-            'Workshops': ['img/2022/workshops1.jpg', 'img/2022/workshops2.jpg']
-        },
-        2023: {
-            'Botlompyics': ['img/2023/botlompyics1.jpg', 'img/2023/botlompyics2.jpg'],
-            'Festival Nacional da Robótica': ['img/2023/festival1.jpg', 'img/2023/festival2.jpg'],
-            'Olimpiadas da Robótica': ['img/2023/olimpiadas1.jpg', 'img/2023/olimpiadas2.jpg'],
-            'Roboparty': ['img/2023/roboparty1.jpg', 'img/2023/roboparty2.jpg'],
-            'Atividades': ['img/2023/atividades1.jpg', 'img/2023/atividades2.jpg'],
-            'Workshops': ['img/2023/workshops1.jpg', 'img/2023/workshops2.jpg']
-        },
         2024: {
+            'Botlompyics': ['img/TESTE1GA.png', 'img/TESTE2GA.png'],
+            'Festival Nacional da Robótica': ['img/2024/festival1.jpg', 'img/2024/festival2.jpg'],
+            'Olimpiadas da Robótica': ['img/2024/olimpiadas1.jpg', 'img/2024/olimpiadas2.jpg'],
+            'Roboparty': ['img/2024/roboparty1.jpg', 'img/2024/roboparty2.jpg'],
+            'Atividades': ['img/2024/atividades1.jpg', 'img/2024/atividades2.jpg'],
+            'Workshops': ['img/2024/workshops1.jpg', 'img/2024/workshops2.jpg']
+        },
+        2025: {
             'Botlompyics': ['img/TESTE1GA.png', 'img/TESTE2GA.png'],
             'Festival Nacional da Robótica': ['img/2024/festival1.jpg', 'img/2024/festival2.jpg'],
             'Olimpiadas da Robótica': ['img/2024/olimpiadas1.jpg', 'img/2024/olimpiadas2.jpg'],
@@ -47,43 +31,59 @@ document.addEventListener('DOMContentLoaded', function() {
     function loadContent(year) {
         mainContent.innerHTML = '';
         const yearData = data[year];
+
         for (const subtitle in yearData) {
-            const subtitleElement = document.createElement('div');
-            subtitleElement.className = 'subtitle';
+            const colElement = document.createElement('div');
+            colElement.className = 'col-lg-4 col-md-6 col-sm-12 mb-4';
+
+            const cardElement = document.createElement('div');
+            cardElement.className = 'card h-100';
 
             const imageElement = document.createElement('img');
-            imageElement.src = yearData[subtitle][0]; // Usar a primeira imagem como capa
+            imageElement.src = yearData[subtitle][0];
             imageElement.alt = subtitle;
+            imageElement.className = 'card-img-top img-fluid';
+            imageElement.style.cursor = 'pointer';
             imageElement.addEventListener('click', () => {
                 openAlbumModal(year, subtitle);
             });
 
+            const cardBody = document.createElement('div');
+            cardBody.className = 'card-body text-center';
+
             const subtitleText = document.createElement('h5');
+            subtitleText.className = 'card-title';
             subtitleText.textContent = subtitle;
 
-            subtitleElement.appendChild(imageElement);
-            subtitleElement.appendChild(subtitleText);
-            mainContent.appendChild(subtitleElement);
+            cardBody.appendChild(subtitleText);
+            cardElement.appendChild(imageElement);
+            cardElement.appendChild(cardBody);
+            colElement.appendChild(cardElement);
+            mainContent.appendChild(colElement);
         }
 
         // Atualizar botão ativo
         document.querySelectorAll('#yearButtons .btn').forEach(btn => {
             btn.classList.remove('active');
+            btn.classList.remove('btn-primary');
+            btn.classList.add('btn-outline-primary');
         });
-        document.querySelector(`#yearButtons .btn[data-year="${year}"]`).classList.add('active');
+        document.querySelector(`#yearButtons .btn[data-year="${year}"]`).classList.add('active', 'btn-primary');
+        document.querySelector(`#yearButtons .btn[data-year="${year}"]`).classList.remove('btn-outline-primary');
     }
 
     // Função para abrir o modal do álbum
     function openAlbumModal(year, subtitle) {
         carouselInner.innerHTML = '';
         const albumImages = data[year][subtitle];
+
         albumImages.forEach((image, index) => {
             const carouselItem = document.createElement('div');
             carouselItem.className = 'carousel-item' + (index === 0 ? ' active' : '');
 
             const imgElement = document.createElement('img');
             imgElement.src = image;
-            imgElement.className = 'd-block w-100';
+            imgElement.className = 'd-block w-100 img-fluid';
             imgElement.alt = subtitle;
 
             carouselItem.appendChild(imgElement);
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Injetar botões de ano
     years.forEach(year => {
         const button = document.createElement('button');
-        button.className = 'btn btn-primary m-1';
+        button.className = 'btn btn-outline-primary mx-2 my-1';
         button.textContent = year;
         button.setAttribute('data-year', year);
         button.addEventListener('click', () => {

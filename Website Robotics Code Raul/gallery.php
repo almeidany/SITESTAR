@@ -1,8 +1,11 @@
+<?php
+require_once __DIR__ . '/layouts/UniversalLayouts/redirector.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-PT">
 
 <?php
-include 'layouts/Gallery/head.php'
+include 'layouts/UniversalLayouts/head.php'
 ?>
 
 <body>
@@ -10,31 +13,38 @@ include 'layouts/Gallery/head.php'
     include 'layouts/UniversalLayouts/nav.php'
     ?>
 
-    <!-- Hero Start -->
+    <!-- Hero Start (corrigido para ficar igual ao index) -->
     <div class="container-fluid pt-5 bg-primary hero-header mb-5">
         <div class="container pt-5">
-            <div class="row justify-content-center" id="yearButtons">
-                <!-- Year buttons will be injected here by JavaScript -->
+            <div class="row g-5 pt-5 justify-content-center">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 text-white mb-4">Galeria de Fotos</h1>
+                    <div class="d-flex flex-wrap justify-content-center" id="yearButtons">
+                        <!-- Year buttons will be injected here by JavaScript -->
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- Hero End -->
 
-    <!-- Main Content Start -->
-    <div class="container my-5" id="mainContent">
-        <!-- Subtitles and images will be injected here by JavaScript -->
+    <!-- Main Content Start (corrigido o layout) -->
+    <div class="container py-5">
+        <div class="row g-4" id="mainContent">
+            <!-- Subtitles and images will be injected here by JavaScript -->
+        </div>
     </div>
     <!-- Main Content End -->
 
     <!-- Album Modal Start -->
     <div id="albumModal" class="modal fade" tabindex="-1" aria-labelledby="albumModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="albumModalLabel">Album</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body p-0">
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner" id="carouselInner">
                             <!-- Carousel items will be injected here by JavaScript -->
@@ -56,19 +66,15 @@ include 'layouts/Gallery/head.php'
     </div>
     <!-- Album Modal End -->
 
-    <!-- Footer Start -->
-    <!-- Footer Start -->
     <?php
     include 'layouts/UniversalLayouts/footer.php'
     ?>
-    <!-- Footer End -->
-
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
 
     <?php
-    include 'layouts/Gallery/scripts.php'
+    include 'layouts/UniversalLayouts/scripts_gallery.php'
     ?>
 </body>
 

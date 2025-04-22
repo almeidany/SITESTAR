@@ -9,4 +9,5 @@
 
  <!-- Template Javascript -->
  <script src="js/main.js"></script>
- <script src="js/error.js"></script>
+ <script src="js/redirect_404.js"></script>
+ <!-- <script src="js/sidebar_mobile.js"></script> -->
