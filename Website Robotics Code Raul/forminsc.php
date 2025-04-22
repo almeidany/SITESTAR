@@ -18,14 +18,14 @@ include './layouts/head_gallery.php'
                 <div class="row mb-4">
                     <div class="col-md-4 mb-3">
                         <label for="primeiroNome" class="form-label fw-bold">Primeiro Nome</label>
-                        <input type="text" class="form-control form-control-lg" id="primeiroNome" required>
+                        <input type="text" class="form-control form-control-lg" id="primeiroNome" required pattern="^[A-Za-zÀ-ÖØ-öø-ÿÇç\s]+$" placeholder="Nome">
                         <div class="invalid-feedback">
                             Por favor, insira o seu primeiro nome.
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <label for="apelido" class="form-label fw-bold">Apelido</label>
-                        <input type="text" class="form-control form-control-lg" id="apelido" required>
+                        <input type="text" class="form-control form-control-lg" id="apelido" required pattern="^[A-Za-zÀ-ÖØ-öø-ÿÇç\s]+$" placeholder="Apelido">
                         <div class="invalid-feedback">
                             Por favor, insira o seu apelido.
                         </div>
@@ -45,7 +45,7 @@ include './layouts/head_gallery.php'
                         <label for="email" class="form-label fw-bold">Email</label>
                         <div class="input-group">
                             <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                            <input type="email" class="form-control form-control-lg" id="email" required>
+                            <input type="email" class="form-control form-control-lg" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="oseuemail@mail.pt">
                         </div>
                         <div class="invalid-feedback">
                             Por favor, insira o seu email.
@@ -55,7 +55,7 @@ include './layouts/head_gallery.php'
                         <label for="telefone" class="form-label fw-bold">Número de Telefone</label>
                         <div class="input-group">
                             <span class="input-group-text"><i class="bi bi-phone"></i></span>
-                            <input type="tel" class="form-control form-control-lg" id="telefone" required>
+                            <input type="tel" class="form-control form-control-lg" id="telefone" required pattern="^\+?[0-9]{1,3}?[0-9]{7,15}$" placeholder="+351 912345678">
                         </div>
                         <div class="invalid-feedback">
                             Por favor, insira o seu número de telefone.
@@ -181,7 +181,7 @@ include './layouts/head_gallery.php'
                         </div>
                         <div class="invalid-feedback d-block">
                             Por favor, selecione uma opção.
-                        </div>zest
+                        </div>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label class="form-label fw-bold">Tenho autorização de imagem?</label>
@@ -221,8 +221,8 @@ include './layouts/head_gallery.php'
                 </div>
             </div>
 
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="align-items: center;">
-                <button type="submit" class="btn btn-primary btn-lg px-4 me-md-2">Enviar</button>
+            <div class="d-flex justify-content-center align-items-center" style="gap: 1rem;">
+                <button type="submit" class="btn btn-primary btn-lg px-4">Enviar</button>
                 <button type="reset" class="btn btn-outline-secondary btn-lg px-4">Limpar</button>
             </div>
         </form>
