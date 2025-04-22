@@ -2,12 +2,12 @@
 <html lang="pt-PT">
 
 <?php
-include 'layouts/head.php'
+include './layouts/head_gallery.php'
 ?>
 
 <body>
     <?php
-    include 'layouts/nav.php'
+    include './layouts/nav.php'
     ?>
 
     <div class="container my-5">
@@ -230,7 +230,7 @@ include 'layouts/head.php'
     <!-- Formulário de Inscrição End -->
 
     <?php
-    include 'layouts/footer.php'
+    include './layouts/footer.php'
     ?>
 
     <!-- Back to Top -->
@@ -270,7 +270,7 @@ include 'layouts/head.php'
         })();
     </script>
     <?php
-    include 'layouts/scripts.php'
+    include './layouts/scripts.php'
     ?>
 </body>
 

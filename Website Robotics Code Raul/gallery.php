@@ -2,12 +2,12 @@
 <html lang="pt-PT">
 
 <?php
-include 'layouts/head.php'
+include './layouts/head.php'
 ?>
 
 <body>
     <?php
-    include 'layouts/nav.php'
+    include './layouts/nav.php'
     ?>
 
     <!-- Hero Start (corrigido para ficar igual ao index) -->
@@ -15,7 +15,6 @@ include 'layouts/head.php'
         <div class="container pt-5">
             <div class="row g-5 pt-5 justify-content-center">
                 <div class="col-12 text-center">
-                    <h1 class="display-4 text-white mb-4">Galeria de Fotos</h1>
                     <div class="d-flex flex-wrap justify-content-center" id="yearButtons">
                         <!-- Year buttons will be injected here by JavaScript -->
                     </div>
@@ -64,14 +63,14 @@ include 'layouts/head.php'
     <!-- Album Modal End -->
 
     <?php
-    include 'layouts/footer.php'
+    include './layouts/footer.php'
     ?>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
 
     <?php
-    include 'layouts/scripts_gallery.php'
+    include './layouts/scripts_gallery.php'
     ?>
 </body>
 

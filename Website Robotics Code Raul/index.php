@@ -2,12 +2,12 @@
 <html lang="pt-PT">
 
 <?php
-include 'layouts/head.php'
+include './layouts/head.php'
 ?>
 
 <body>
     <?php
-    include 'layouts/nav.php'
+    include './layouts/nav.php'
     ?>
     <!-- Hero Start -->
     <div class="container-fluid pt-5 bg-primary hero-header mb-5">
@@ -341,14 +341,14 @@ include 'layouts/head.php'
     <!-- Team End -->
 
     <?php
-    include 'layouts/footer.php'
+    include './layouts/footer.php'
     ?>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
 
     <?php
-    include 'layouts/scripts.php'
+    include './layouts/scripts.php'
     ?>
 </body>
 

@@ -2,13 +2,13 @@
 <html lang="pt-PT">
 
 <?php
-include 'layouts/head.php'
+include './layouts/head.php'
 ?>
 
 <body>
 
     <?php
-    include 'layouts/nav.php'
+    include './layouts/nav.php'
     ?>
 
     <!-- Hero Start -->
@@ -80,7 +80,7 @@ include 'layouts/head.php'
 
     <!-- Footer Start -->
     <?php
-    include 'layouts/footer.php'
+    include './layouts/footer.php'
     ?>
     <!-- Footer End -->
 
@@ -88,7 +88,7 @@ include 'layouts/head.php'
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
 
     <?php
-    include 'layouts/scripts.php'
+    include './layouts/scripts.php'
     ?>
 </body>
 
