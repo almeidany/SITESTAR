@@ -179,9 +179,6 @@ include './layouts/head_gallery.php'
                             <input type="radio" class="btn-check" id="alergiasSim" name="alergias" value="sim">
                             <label class="btn btn-outline-primary" for="alergiasSim">Não</label>
                         </div>
-                        <div class="invalid-feedback d-block">
-                            Por favor, selecione uma opção.
-                        </div>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label class="form-label fw-bold">Tenho autorização de imagem?</label>
@@ -191,9 +188,6 @@ include './layouts/head_gallery.php'
 
                             <input type="radio" class="btn-check" id="autorizacaoNao" name="autorizacao" value="nao" required>
                             <label class="btn btn-outline-primary" for="autorizacaoNao">Não</label>
-                        </div>
-                        <div class="invalid-feedback d-block">
-                            Por favor, selecione uma opção.
                         </div>
                     </div>
                 </div>
@@ -256,17 +250,29 @@ include './layouts/head_gallery.php'
 
             var forms = document.querySelectorAll('.needs-validation');
 
-            Array.prototype.slice.call(forms)
-                .forEach(function(form) {
-                    form.addEventListener('submit', function(event) {
-                        if (!form.checkValidity()) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        }
+            Array.prototype.slice.call(forms).forEach(function(form) {
+                // Validação ao submeter o formulário
+                form.addEventListener('submit', function(event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
 
-                        form.classList.add('was-validated');
-                    }, false);
+                // Validação em tempo real para cada campo
+                form.querySelectorAll('input, select, textarea').forEach(function(input) {
+                    input.addEventListener('input', function() {
+                        if (input.checkValidity()) {
+                            input.classList.add('is-valid');
+                            input.classList.remove('is-invalid');
+                        } else {
+                            input.classList.add('is-invalid');
+                            input.classList.remove('is-valid');
+                        }
+                    });
                 });
+            });
         })();
     </script>
     <?php
