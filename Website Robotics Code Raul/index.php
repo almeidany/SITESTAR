@@ -1,16 +1,13 @@
-<?php
-require_once __DIR__ . '/layouts/UniversalLayouts/redirector.php';
-?>
 <!DOCTYPE html>
 <html lang="pt-PT">
 
 <?php
-include 'layouts/UniversalLayouts/head.php'
+include 'layouts/head.php'
 ?>
 
 <body>
     <?php
-    include 'layouts/UniversalLayouts/nav.php'
+    include 'layouts/nav.php'
     ?>
     <!-- Hero Start -->
     <div class="container-fluid pt-5 bg-primary hero-header mb-5">
@@ -21,8 +18,7 @@ include 'layouts/UniversalLayouts/head.php'
                         Code
                         Raul</div>
                     <h1 class="display-4 text-white mb-4 animated slideInRight">O clube de robótica do AERP</h1>
-                    <p class="text-white mb-4 animated slideInRight">O Clube de Robótica da escola oferece aos
-                        alunos a
+                    <p class="text-white mb-4 animated slideInRight">Aqui ooferecemos aos alunos uma
                         oportunidade de explorar a ciência e tecnologia, desenvolvendo habilidades práticas em
                         programação e engenharia. Com atividades colaborativas, preparamos os estudantes para os
                         desafios do futuro digital.</p>
@@ -167,9 +163,9 @@ include 'layouts/UniversalLayouts/head.php'
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionFAQ1">
                                 <div class="accordion-body">
-                                    O clube de robótica funciona todas as quartas-feiras das 11h50 às 13h20 Sala 35
+                                    O clube de robótica funciona todas as quartas-feiras das 11h50 ás 13h20 Sala 35
                                     e,
-                                    sextas-feiras das 13h35 às 16h00. Sala-34.
+                                    sextas-feiras das 13h35 ás 16h00. Sala-34.
                                 </div>
                             </div>
                         </div>
@@ -345,14 +341,14 @@ include 'layouts/UniversalLayouts/head.php'
     <!-- Team End -->
 
     <?php
-    include 'layouts/UniversalLayouts/footer.php'
+    include 'layouts/footer.php'
     ?>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
 
     <?php
-    include 'layouts/UniversalLayouts/scripts.php'
+    include 'layouts/scripts.php'
     ?>
 </body>
 

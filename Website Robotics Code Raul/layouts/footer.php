@@ -1,15 +1,13 @@
-<!-- Footer Start -->
 <div class="container-fluid bg-dark text-white-50 footer pt-5">
     <div class="container py-5">
         <div class="row g-5">
             <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-                <a href="index.php" class="d-inline-block mb-3">
+                <a href="index.html" class="d-inline-block mb-3">
                     <h1>
                         <img src="img/logo.png" alt="Logo" class="img-fluid" style="max-height: 100px;">
                     </h1>
                 </a>
-                <p class="mb-0">Robotics Code Raul: Incentivando a inovação e o aprendizado através da
-                    tecnologia e
+                <p class="mb-0">Robotics Code Raul: Incentivando a inovação e o aprendizado através da tecnologia e
                     da robótica.</p>
             </div>
             <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
@@ -25,8 +23,8 @@
             </div>
             <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
                 <h5 class="text-white mb-4">Páginas Populares</h5>
-                <a class="btn btn-link" href="forminsc.php">Formulário de Inscrição</a>
-                <a class="btn btn-link" href="sobrenos.php">Sobre Nós</a>
+                <a class="btn btn-link" href="">Formulário de Inscrição</a>
+                <a class="btn btn-link" href="">Sobre Nós</a>
             </div>
             <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
                 <h5 class="text-white mb-4">Outros Links</h5>
@@ -38,16 +36,17 @@
         <div class="copyright">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; Projetado por Tiago Almeida e Pedro Franco. Distribuido por
+                    &copy; Robotics Code Raul, Todos os direitos reservados.
+
+                    Projetado por Tiago Almeida e Luís Fernandes. Distribuido por
                     <a class="border-bottom" href="https://aerp.pt" target="_blank">AERP</a>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <div class="footer-menu">
-                        <a href="index.php">Página Inicial</a>
+                        <a href="index.html">Página Inicial</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Footer End -->

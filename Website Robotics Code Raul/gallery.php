@@ -1,16 +1,13 @@
-<?php
-require_once __DIR__ . '/layouts/UniversalLayouts/redirector.php';
-?>
 <!DOCTYPE html>
 <html lang="pt-PT">
 
 <?php
-include 'layouts/UniversalLayouts/head.php'
+include 'layouts/head.php'
 ?>
 
 <body>
     <?php
-    include 'layouts/UniversalLayouts/nav.php'
+    include 'layouts/nav.php'
     ?>
 
     <!-- Hero Start (corrigido para ficar igual ao index) -->
@@ -67,14 +64,14 @@ include 'layouts/UniversalLayouts/head.php'
     <!-- Album Modal End -->
 
     <?php
-    include 'layouts/UniversalLayouts/footer.php'
+    include 'layouts/footer.php'
     ?>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
 
     <?php
-    include 'layouts/UniversalLayouts/scripts_gallery.php'
+    include 'layouts/scripts_gallery.php'
     ?>
 </body>
 

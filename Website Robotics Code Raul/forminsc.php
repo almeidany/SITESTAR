@@ -1,44 +1,40 @@
-<?php
-require_once __DIR__ . '/layouts/UniversalLayouts/redirector.php';
-?>
 <!DOCTYPE html>
 <html lang="pt-PT">
 
 <?php
-include 'layouts/UniversalLayouts/head_forminsc.php'
+include 'layouts/head.php'
 ?>
 
 <body>
     <?php
-    include 'layouts/UniversalLayouts/nav.php'
+    include 'layouts/nav.php'
     ?>
 
     <div class="container my-5">
         <form method="post" action="" class="needs-validation" novalidate>
-            <div class="form-card p-4 mb-5 rounded-4 shadow-sm">
+            <div class="form-card p-4 mb-5 rounded-4">
                 <h2 class="mb-4 text-primary" style="text-align: center;">Dados Pessoais</h2>
-
                 <!-- Primeira linha - Nome, Apelido, Data Nascimento -->
                 <div class="row mb-4">
                     <div class="col-md-4 mb-3">
                         <label for="primeiroNome" class="form-label fw-bold">Primeiro Nome</label>
                         <input type="text" class="form-control form-control-lg" id="primeiroNome" required>
                         <div class="invalid-feedback">
-                            Por favor, insira seu primeiro nome.
+                            Por favor, insira o seu primeiro nome.
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <label for="apelido" class="form-label fw-bold">Apelido</label>
                         <input type="text" class="form-control form-control-lg" id="apelido" required>
                         <div class="invalid-feedback">
-                            Por favor, insira seu apelido.
+                            Por favor, insira o seu apelido.
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <label for="dataNascimento" class="form-label fw-bold">Data de Nascimento</label>
                         <input type="date" class="form-control form-control-lg" id="dataNascimento" required>
                         <div class="invalid-feedback">
-                            Por favor, selecione sua data de nascimento.
+                            Por favor, selecione a sua data de nascimento.
                         </div>
                     </div>
                 </div>
@@ -52,7 +48,7 @@ include 'layouts/UniversalLayouts/head_forminsc.php'
                             <input type="email" class="form-control form-control-lg" id="email" required>
                         </div>
                         <div class="invalid-feedback">
-                            Por favor, insira um email válido.
+                            Por favor, insira o seu email.
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
@@ -62,7 +58,7 @@ include 'layouts/UniversalLayouts/head_forminsc.php'
                             <input type="tel" class="form-control form-control-lg" id="telefone" required>
                         </div>
                         <div class="invalid-feedback">
-                            Por favor, insira seu número de telefone.
+                            Por favor, insira o seu número de telefone.
                         </div>
                     </div>
                 </div>
@@ -73,12 +69,88 @@ include 'layouts/UniversalLayouts/head_forminsc.php'
                         <label for="turma" class="form-label fw-bold">Turma</label>
                         <select class="form-select form-select-lg" id="turma" required>
                             <option value="" selected disabled>Escolha sua turma</option>
-                            <option value="turma1">Turma 1</option>
-                            <option value="turma2">Turma 2</option>
-                            <option value="turma3">Turma 3</option>
+                            <!-- 7º Ano -->
+                            <option value="7A">7ºA</option>
+                            <option value="7B">7ºB</option>
+                            <option value="7C">7ºC</option>
+                            <option value="7D">7ºD</option>
+                            <option value="7E">7ºE</option>
+                            <option value="7F">7ºF</option>
+                            <option value="7G">7ºG</option>
+                            <option value="7H">7ºH</option>
+                            <option value="7I">7ºI</option>
+
+                            <!-- 8º Ano -->
+                            <option value="8A">8ºA</option>
+                            <option value="8B">8ºB</option>
+                            <option value="8C">8ºC</option>
+                            <option value="8D">8ºD</option>
+                            <option value="8E">8ºE</option>
+                            <option value="8F">8ºF</option>
+                            <option value="8G">8ºG</option>
+                            <option value="8H">8ºH</option>
+                            <option value="8I">8ºI</option>
+
+                            <!-- 9º Ano -->
+                            <option value="9A">9ºA</option>
+                            <option value="9B">9ºB</option>
+                            <option value="9C">9ºC</option>
+                            <option value="9D">9ºD</option>
+                            <option value="9E">9ºE</option>
+                            <option value="9F">9ºF</option>
+                            <option value="9G">9ºG</option>
+                            <option value="9H">9ºH</option>
+                            <option value="9I">9ºI</option>
+
+                            <!-- 10º Ano -->
+                            <option value="10AV1">10ºAV1</option>
+                            <option value="10AV2">10ºAV2</option>
+                            <option value="10AV3">10ºAV3</option>
+                            <option value="10CT1">10ºCT1</option>
+                            <option value="10CT2">10ºCT2</option>
+                            <option value="10CT3">10ºCT3</option>
+                            <option value="10CS1">10ºCS1</option>
+                            <option value="10CS2">10ºCS2</option>
+                            <option value="10CS3">10ºCS3</option>
+                            <option value="10LH1">10ºLH1</option>
+                            <option value="10LH2">10ºLH2</option>
+                            <option value="10LH3">10ºLH3</option>
+
+                            <!-- 11º Ano -->
+                            <option value="11AV1">11ºAV1</option>
+                            <option value="11AV2">11ºAV2</option>
+                            <option value="11AV3">11ºAV3</option>
+                            <option value="11CT1">11ºCT1</option>
+                            <option value="11CT2">11ºCT2</option>
+                            <option value="11CT3">11ºCT3</option>
+                            <option value="11CS1">11ºCS1</option>
+                            <option value="11CS2">11ºCS2</option>
+                            <option value="11CS3">11ºCS3</option>
+                            <option value="11LH1">11ºLH1</option>
+                            <option value="11LH2">11ºLH2</option>
+                            <option value="11LH3">11ºLH3</option>
+
+                            <!-- 12º Ano -->
+                            <option value="12AV1">12ºAV1</option>
+                            <option value="12AV2">12ºAV2</option>
+                            <option value="12AV3">12ºAV3</option>
+                            <option value="12CT1">12ºCT1</option>
+                            <option value="12CT2">12ºCT2</option>
+                            <option value="12CT3">12ºCT3</option>
+                            <option value="12CS1">12ºCS1</option>
+                            <option value="12CS2">12ºCS2</option>
+                            <option value="12CS3">12ºCS3</option>
+                            <option value="12LH1">12ºLH1</option>
+                            <option value="12LH2">12ºLH2</option>
+                            <option value="12LH3">12ºLH3</option>
+
+                            <!-- PSI -->
+                            <option value="1PSI">1ºPSI</option>
+                            <option value="2PSI">2ºPSI</option>
+                            <option value="3PSI">3ºPSI</option>
                         </select>
                         <div class="invalid-feedback">
-                            Por favor, selecione sua turma.
+                            Por favor, selecione a sua turma.
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
@@ -91,7 +163,7 @@ include 'layouts/UniversalLayouts/head_forminsc.php'
                             <option value="XL">XL</option>
                         </select>
                         <div class="invalid-feedback">
-                            Por favor, selecione o tamanho da T-shirt.
+                            Por favor, selecione o seu tamanho da T-shirt.
                         </div>
                     </div>
                 </div>
@@ -101,18 +173,15 @@ include 'layouts/UniversalLayouts/head_forminsc.php'
                     <div class="col-md-6 mb-3">
                         <label class="form-label fw-bold">Alergias Alimentares</label>
                         <div class="btn-group w-100" role="group">
-                            <input type="radio" class="btn-check" id="alergiasNao" name="alergias" value="nao" checked>
-                            <label class="btn btn-outline-primary" for="alergiasNao">Não</label>
+                            <input type="radio" class="btn-check" id="alergiasNao" name="alergias" value="nao">
+                            <label class="btn btn-outline-primary" for="alergiasNao">Sim</label>
 
                             <input type="radio" class="btn-check" id="alergiasSim" name="alergias" value="sim">
-                            <label class="btn btn-outline-primary" for="alergiasSim">Sim</label>
-
-                            <input type="radio" class="btn-check" id="alergiasOutros" name="alergias" value="outros">
-                            <label class="btn btn-outline-primary" for="alergiasOutros">Outros</label>
+                            <label class="btn btn-outline-primary" for="alergiasSim">Não</label>
                         </div>
-                        <div id="alergiasOutrosContainer" class="mt-3" style="display: none;">
-                            <input type="text" class="form-control form-control-lg" id="alergiasOutrosDescricao" placeholder="Descreva suas alergias alimentares">
-                        </div>
+                        <div class="invalid-feedback d-block">
+                            Por favor, selecione uma opção.
+                        </div>zest
                     </div>
                     <div class="col-md-6 mb-3">
                         <label class="form-label fw-bold">Tenho autorização de imagem?</label>
@@ -129,11 +198,10 @@ include 'layouts/UniversalLayouts/head_forminsc.php'
                     </div>
                 </div>
 
-                <!-- Quinta linha - Observações -->
                 <div class="row mb-4">
                     <div class="col-12 mb-3">
-                        <label for="beneficio" class="form-label fw-bold">Observações</label>
-                        <textarea class="form-control form-control-lg" id="beneficio" rows="3" placeholder="Se necessário, adicione observações aqui..."></textarea>
+                        <label for="beneficio" class="form-label fw-bold">Se sim, escreve-as aqui por favor.</label>
+                        <textarea class="form-control form-control-lg" id="beneficio" rows="3" placeholder="Pó, amêndoins, cajus, nozes..."></textarea>
                     </div>
                 </div>
 
@@ -142,11 +210,10 @@ include 'layouts/UniversalLayouts/head_forminsc.php'
                     <div class="col-12">
                         <label for="FotodePerfil" class="form-label fw-bold">Foto de Perfil</label>
                         <div class="file-upload-wrapper">
-                            <input type="file" class="file-upload-input" id="FotodePerfil" accept="image/*">
+                            <input type="file" class="file-upload-input" id="FotodePerfil" accept="image/*" data-text="Escolha a imagem">
                             <div class="file-upload-display d-flex align-items-center justify-content-center">
                                 <div class="file-upload-preview">
                                     <i class="bi bi-camera-fill display-4 text-muted"></i>
-                                    <p class="mt-2 mb-0">Clique para adicionar foto</p>
                                 </div>
                             </div>
                         </div>
@@ -163,20 +230,12 @@ include 'layouts/UniversalLayouts/head_forminsc.php'
     <!-- Formulário de Inscrição End -->
 
     <?php
-    include 'layouts/UniversalLayouts/footer.php'
+    include 'layouts/footer.php'
     ?>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
     <script>
-        // Mostrar campo de descrição quando "Outros" for selecionado nas alergias
-        document.querySelectorAll('input[name="alergias"]').forEach(radio => {
-            radio.addEventListener('change', function() {
-                const descricaoContainer = document.getElementById('alergiasOutrosContainer');
-                descricaoContainer.style.display = this.value === 'outros' ? 'block' : 'none';
-            });
-        });
-
         // Preview da imagem selecionada
         document.getElementById('FotodePerfil').addEventListener('change', function(e) {
             const preview = document.querySelector('.file-upload-preview');
@@ -211,7 +270,7 @@ include 'layouts/UniversalLayouts/head_forminsc.php'
         })();
     </script>
     <?php
-    include 'layouts/UniversalLayouts/scripts.php'
+    include 'layouts/scripts.php'
     ?>
 </body>
 

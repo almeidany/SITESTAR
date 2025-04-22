@@ -1,17 +1,14 @@
-<?php
-require_once __DIR__ . '/layouts/UniversalLayouts/redirector.php';
-?>
 <!DOCTYPE html>
 <html lang="pt-PT">
 
 <?php
-include 'layouts/UniversalLayouts/head.php'
+include 'layouts/head.php'
 ?>
 
 <body>
 
     <?php
-    include 'layouts/UniversalLayouts/nav.php'
+    include 'layouts/nav.php'
     ?>
 
     <!-- Hero Start -->
@@ -83,7 +80,7 @@ include 'layouts/UniversalLayouts/head.php'
 
     <!-- Footer Start -->
     <?php
-    include 'layouts/UniversalLayouts/footer.php'
+    include 'layouts/footer.php'
     ?>
     <!-- Footer End -->
 
@@ -91,7 +88,7 @@ include 'layouts/UniversalLayouts/head.php'
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
 
     <?php
-    include 'layouts/UniversalLayouts/scripts.php'
+    include 'layouts/scripts.php'
     ?>
 </body>
 
